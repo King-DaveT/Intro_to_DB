@@ -1,3 +1,4 @@
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 CREATE TABLE alx_book_store.Authors(
 	author_id INT AUTO_INCREMENT Primary Key,
 author_name VARCHAR(215));
