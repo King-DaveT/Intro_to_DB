@@ -17,7 +17,7 @@ def create_database():
             cursor.close()
             connection.close()
 
-    except Error as err:
+    except mysql.connector.Error:
         print(f"Error connecting to MySQL: {err}")
 
 if __name__ == "__main__":
