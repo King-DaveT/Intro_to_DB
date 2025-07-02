@@ -1,3 +1,4 @@
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 CREATE TABLE alx_book_store.Authors(
 	author_id INT AUTO_INCREMENT Primary Key,
 author_name VARCHAR(215));
@@ -22,7 +23,7 @@ order_id INT NOT NULL,
 customer_id INT,
 order_date DATE,
 PRIMARY KEY (order_id),
-FOREIGN KEY (customer_id) REFERENCES Customers (customer_id));
+FOREIGN KEY (customer_id) REFERENCES Customers(customer_id));
 
 CREATE TABLE alx_book_store.Order_Details (
 orderdetailid INT,
