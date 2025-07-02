@@ -22,7 +22,7 @@ order_id INT NOT NULL,
 customer_id INT,
 order_date DATE,
 PRIMARY KEY (order_id),
-FOREIGN KEY (customer_id) REFERENCES Customers (customer_id));
+FOREIGN KEY (customer_id) REFERENCES Customers(customer_id));
 
 CREATE TABLE alx_book_store.Order_Details (
 orderdetailid INT,
